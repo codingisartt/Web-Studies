@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Css</title>
+
+    <!-- private expressions override general ones-->
+    <style>
+        *{
+            color: darkorange;
+        }
+        
+        p{ 
+            color: blue;
+        }
+        .yazi{
+            color: crimson;
+        }
+        div.yazi{
+            color:chartreuse;
+        }
+        a{
+            font-family: cursive;
+            text-decoration: none;
+            font-weight: 800;
+            display: inline-block;
+            border-radius: 50px;
+            background-color:rgb(174, 237, 15);
+        }
+        a:visited{
+           color:blueviolet;
+        }
+        a:hover{
+            background-color:cyan;
+            color: deeppink;
+        }
+        <!--emoji can be used also >
+        ul{
+            list-style-type: lower-greek; 
+        }
+        .kutu1{
+            background-color: burlywood;
+            height: 50px;
+        }
+        .kutu2{
+            background-color: darkblue;
+            padding: 50px;
+            margin-top: 90px;
+        }
+        .kutu3{
+            background-color: cornflowerblue;
+            width: 100px;
+            padding: 60px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .banner{
+            background-image: url(img/pexels-jeremy-bishop-2422915.jpg);
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui sed sequi vel ducimus rem obcaecati laborum optio corporis, quaerat libero eum blanditiis vitae veniam aut quisquam, consequatur sunt possimus, excepturi exercitationem autem. Minima dolores velit illum quaerat consectetur assumenda.
+    </p>
+    <p class="yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui sed sequi vel ducimus rem obcaecati laborum optio corporis, quaerat libero eum blanditiis vitae veniam aut quisquam, consequatur sunt possimus, excepturi exercitationem autem. Minima dolores velit illum quaerat consectetur assumenda.
+    </p>
+    <p class="yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui sed sequi vel ducimus rem obcaecati laborum optio corporis, quaerat libero eum blanditiis vitae veniam aut quisquam, consequatur sunt possimus, excepturi exercitationem autem. Minima dolores velit illum quaerat consectetur assumenda.
+    </p>
+    <div class="yazi">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea, odio maxime ab aspernatur eaque commodi harum officiis architecto veritatis minus tempora? Rerum culpa totam accusamus, voluptatem eum impedit. Soluta?
+    </div>
+
+    <ul>
+        <li><a href="#">Ana Sayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletişim</a></li>
+    </ul>
+    <p>inline and block type tags</p>
+    <b> b tagı inline dır</b> çünkü devamına yazılır ve width height , padding ve margin de  direkt alamaz
+    <div> block tagler divler bütün satırı kaplarlar</div> ve direkt altına geçer yazı
+
+    <br>
+    <a href="#">inline block oldular "display:block"</a>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa magnam excepturi necessitatibus corrupti reiciendis dolorum quas?</p>
+    <p style="color:black">display:none olursa görünmüyor</p>
+
+    <p style="color:blue">inline elemetlere sadece yatay margin ve padding verilerbilir</p>
+    <div class="kutu1">
+
+    </div>
+    <!-- "div.kutu" diyerek yazdık -->
+    <div class="kutu2"> <!-- kapsayan parent yani arkasında duruyor gibi-->
+        <div class="kutu3">TEST</div>
+    </div>
+
+    <a href="https://www.oracle.com/index.html">Oracle <3</a>
+
+    <div class="banner">
+        <h1>TechPro Education</h1>
+    </div>
+</body>
+</html>
